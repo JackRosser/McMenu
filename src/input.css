@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* @tailwind base; <-- questa gestisce flex, grid, grid-cols, w, h, colori */
+/* @tailwind utilities; <-- questa gestisce il padding */
+/* NON VANNO VIRGOLE TRA LE PARENTESI GRAFFE */
+
+@layer base {
+  .myBox {
+    @apply bg-white;
+    @apply absolute;
+    @apply bottom-0;
+    @apply w-full;
+    @apply h-[60vh];
+    @apply md:h-full;
+    @apply md:w-1/2;
+    @apply md:right-0;
+    @apply lg:rounded-2xl;
+    @apply lg:h-[85vh];
+    @apply lg:mb-[7.5vh];
+    @apply lg:w-[60vw];
+    @apply lg:me-[7.5vw];
+    @apply xl:w-[65vw];
+    @apply xl:h-[90vh];
+    @apply xl:mb-[5vh];
+    @apply xl:me-[5vw];
+  }
+}
+
+@layer utilities {
+  .myBox {
+    @apply p-2;
+  }
+}
